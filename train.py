@@ -517,7 +517,7 @@ def main():
                        help='number of epochs')
     parser.add_argument('--save_every', type=int, default=5000,
                        help='save frequency')
-    parser.add_argument('-f', type=str, type=str, default='/root/.local/share/jupyter/runtime/kernel-46850a28-6bfe-4077-8deb-8233d098e79f.json',
+    parser.add_argument('-f', type=str, default='/root/.local/share/jupyter/runtime/kernel-46850a28-6bfe-4077-8deb-8233d098e79f.json',
                        help='Google Colab Default')
     parser.add_argument('--grad_clip', type=float, default=5.,
                        help='clip gradients at this value')
