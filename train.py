@@ -497,9 +497,9 @@ def main():
     "Must be run in Python 3.3 or later. You are running {}".format(sys.version)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', type=str, default='/var/scotus',
+    parser.add_argument('--data_dir', type=str, default='reddit-data',
                        help='data directory containing input.txt')
-    parser.add_argument('--save_dir', type=str, default='/var/new_save',
+    parser.add_argument('--save_dir', type=str, default='redditmodel',
                        help='directory for checkpointed models (load from here if one is already present)')
     parser.add_argument('--block_size', type=int, default=2048,
                        help='number of cells per block')
@@ -517,7 +517,7 @@ def main():
                        help='number of epochs')
     parser.add_argument('--save_every', type=int, default=5000,
                        help='save frequency')
-    parser.add_argument('-f', type=str, default='/root/.local/share/jupyter/runtime/kernel-46850a28-6bfe-4077-8deb-8233d098e79f.json',
+    parser.add_argument('-f', type=str, type=str, default='/root/.local/share/jupyter/runtime/kernel-46850a28-6bfe-4077-8deb-8233d098e79f.json',
                        help='Google Colab Default')
     parser.add_argument('--grad_clip', type=float, default=5.,
                        help='clip gradients at this value')
